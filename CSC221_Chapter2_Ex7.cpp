@@ -22,30 +22,30 @@ int main()
     double oceanLevelIn5Years, oceanLevelIn7Years, oceanLevelIn10Years;
 
     //Ocean Rise Multiplier per year in millimeters
-    const double OCEAN_RISE_PER_YEAR = 1.5;
-    double oceanLevel;
+    const double OCEAN_LEVEL = 1000;
+    double oceanLevelRise;
 
 
     //Prompt the user to enter the current Ocean Level
-    cout << "Please enter the current ocean level." << endl;
+    cout << "Please enter the number of the number of millimeters the ocean level rises per year." << endl;
     //Store the value user entered in a variable
-    cin >> oceanLevel;
-    cout << "The current ocean level is " << oceanLevel << " millimeters." << endl << endl;
+    cin >> oceanLevelRise;
+    cout << "The ocean rises " << oceanLevelRise << " millimeters every year." << endl << endl;
 
     //Calculate the number of millimeters higher than the current level that the ocean’s level will be in 5 years.
-    oceanLevelIn5Years = oceanLevel + (OCEAN_RISE_PER_YEAR * 5);
+    oceanLevelIn5Years = OCEAN_LEVEL + (oceanLevelRise * 5);
     cout << "The ocean level will be " << oceanLevelIn5Years << " mm in 5 years." << endl;
-    cout << "The ocean level will be " << oceanLevelIn5Years - oceanLevel << " mm higher than the current level in 5 years." << endl << endl;
+    cout << "The ocean level will be " << oceanLevelIn5Years - OCEAN_LEVEL << " mm higher than the current level in 5 years." << endl << endl;
 
     //Calculate the number of millimeters higher than the current level that the ocean’s level will be in 7 years.
-    oceanLevelIn7Years = oceanLevel + (OCEAN_RISE_PER_YEAR * 7);
+    oceanLevelIn7Years = OCEAN_LEVEL + (oceanLevelRise * 7);
     cout << "The ocean level will be " << oceanLevelIn7Years << " mm in 7 years." << endl;
-    cout << "The ocean level will be " << oceanLevelIn7Years - oceanLevel << " mm higher than the current level in 7 years." << endl << endl;
+    cout << "The ocean level will be " << oceanLevelIn7Years - OCEAN_LEVEL << " mm higher than the current level in 7 years." << endl << endl;
 
     // Calculate the number of millimeters higher than the current level that the ocean’s level will be in 10 years.
-    oceanLevelIn10Years = oceanLevel + (OCEAN_RISE_PER_YEAR * 10);
+    oceanLevelIn10Years = OCEAN_LEVEL + (oceanLevelRise * 10);
     cout << "The ocean level will be " << oceanLevelIn10Years << " mm in 10 years." << endl;
-    cout << "The ocean level will be " << oceanLevelIn10Years - oceanLevel << " mm higher than the current level in 10 years." << endl << endl;
+    cout << "The ocean level will be " << oceanLevelIn10Years - OCEAN_LEVEL << " mm higher than the current level in 10 years." << endl << endl;
 
     return 0;
 }
