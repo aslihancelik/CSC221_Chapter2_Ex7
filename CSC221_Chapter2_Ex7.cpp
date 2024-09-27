@@ -24,7 +24,9 @@ int main()
     const double OCEAN_LEVEL = 1000; //This is an example value.
 
     //Output what the ocean level is currently.
-    cout << "The current ocean level is " << OCEAN_LEVEL << " millimeters." << endl << endl;
+    cout << "The current ocean level is " << OCEAN_LEVEL << " millimeters." << endl;
+    //Output the rise in the ocean level per year.
+    cout << "The rise in the ocean level per year is " << OCEAN_RISE_PER_YEAR << " millimeters." << endl << endl;
 
     //Calculate the number of millimeters higher than the current level that the ocean’s level will be in 5 years.
     oceanLevelIn5Years = OCEAN_LEVEL + (OCEAN_RISE_PER_YEAR * 5);
