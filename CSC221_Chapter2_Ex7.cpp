@@ -30,7 +30,7 @@ int main()
     cout << "Please enter the current ocean level." << endl;
     //Store the value user entered in a variable
     cin >> oceanLevel;
-    cout << "The current ocean level is " << oceanLevel << " millimeters." << endl;
+    cout << "The current ocean level is " << oceanLevel << " millimeters." << endl << endl;
 
     //Calculate the number of millimeters higher than the current level that the ocean’s level will be in 5 years.
     oceanLevelIn5Years = oceanLevel + (OCEAN_RISE_PER_YEAR * 5);
