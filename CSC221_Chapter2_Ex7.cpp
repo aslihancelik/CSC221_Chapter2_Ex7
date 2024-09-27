@@ -21,12 +21,12 @@ int main()
     //Declaring the variables that will be used to hold the value of ocean level in 5, 7 and 10 years
     double oceanLevelIn5Years, oceanLevelIn7Years, oceanLevelIn10Years;
 
-    //Ocean Rise Multiplier per year in millimeters
-    const double OCEAN_LEVEL = 1000;
+    //Ocean Rise per year in millimeters 
     double oceanLevelRise;
+    //Ocean Level as constant variable
+    const double OCEAN_LEVEL = 1000; //This is an example value.
 
-
-    //Prompt the user to enter the current Ocean Level
+    //Prompt the user to enter the rise in ocean level per year in millimeters
     cout << "Please enter the number of the number of millimeters the ocean level rises per year." << endl;
     //Store the value user entered in a variable
     cin >> oceanLevelRise;
